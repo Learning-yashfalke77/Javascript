@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+body {
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'Righteous', cursive;
+}
+
+h1 {
+  color: olive;
+}
+
+
+#banner {
+  width: 100%;
+}
+img.square {
+  width: 400px;
+  object-fit: cover;
+  height: 400px;
+}
+
+#toc {
+  background-color: #f8f9fa;
+  border: 1px solid #a2a9b1;
+  display: table;
+  padding: 1em;
+}
+
+#toc a {
+  text-decoration: none;
+}
+
+.tocnumber {
+  color: black;
+}
+
+
+/*  ----------------------------------------------------------------- Classes for javascript  ------------------------------------------ */
+.purple {
+  color: #7b07ff;
+}
+
+.border {
+  border: 3px solid greenyellow;
+}

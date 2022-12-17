@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image uploader</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <input type="file" id="file-input" accept="image/*" multiple>
+        <label for="file-input">
+            <i class="fas fa-arrow-circle-up"></i>
+            Choose a photo
+        </label>
+        <h3>You can upload 10 images at a time</h3>
+        <h3 id="no-of-files">No Images choosen</h3>
+        <div class="images"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

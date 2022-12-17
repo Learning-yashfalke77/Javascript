@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Welcome to Pico</title>
+</head>
+
+<body>
+
+    <div class="notification">
+        <div class="alert alert-success alert-dismissible fade" role="alert" id="success">
+            <strong>Success</strong> Form submitted succesfully
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <div class="alert alert-danger alert-dismissible fade" role="alert" id="failure">
+            <strong>Error</strong> please fill the details correctly
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h1>Pico</h1>
+
+        <form id="pico">
+            <div class="mb-3">
+                <label for="name" class="form-label">Userame</label>
+                <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp"
+                    placeholder="Enter your Name" required>
+                <small class="form-text invalid-feedback" style="color:red;" id="namevalid">
+                    Your username must have 4-15 characters long and should not start with a number
+                </small>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Enter Email</label>
+                <input type="text" class="form-control" id="email" placeholder="name@email.com" required>
+                <small class="form-text invalid-feedback" style="color:red;" id="emailvalid">
+                    Please enter valid emailll
+                </small>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Enter Your Phone no</label>
+                <input type="text" class="form-control" id="phone" placeholder="Phone No:" required>
+                <small class="form-text invalid-feedback" style="color:red;" id="phonevalid">
+                    Your phone Number must have 10 numbers long and must start with 7 or 8 or 9
+                </small>
+            </div>
+            <div class="mb-3">
+                <label for="gender" class="form-label">Select Gender</label>
+                <select class="form-select" aria-label="Default select example" id="gender" required>
+                    <option selected>Open this select menu</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                    <option value="3">Others</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="address" class="form-label">Enter Address</label>
+                <textarea name="address" id="address" class="form-control" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="msg" class="form-label">any other Message</label>
+                <textarea name="msg" id="msg" class="form-control"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        
+    <script src="form Validation.js"></script>
+</body>
+
+</html>
